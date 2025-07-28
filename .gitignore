@@ -1,5 +1,8 @@
 node_modules/*
 package-lock.json
 #package.json
+# every fucking package manager has a goddam lock file,
+# for some fucking reason every single one is different, like
+# who the fuck do you expect to read them?
 *.lock
-
+*-lock.*
