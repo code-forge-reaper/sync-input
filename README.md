@@ -5,7 +5,7 @@ This is a nodejs project that adds synchronous input back into to nodejs.
 
 ## Usage
 
-```
+```javascript
 import {input} from "sync-input"
 
 const name = input("What is your name?")
