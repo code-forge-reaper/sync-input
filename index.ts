@@ -1,6 +1,9 @@
 import fs from 'fs'
-
-function readline() {
+export function input(prompt?: string): string | null {
+	if (prompt) {
+		//process.stdout.write(prompt)
+		console.log(prompt)
+	}
 	const buf = Buffer.alloc(1)
 	let str = ''
 
@@ -22,8 +25,7 @@ function readline() {
 
 if(import.meta.main){
 	// test
-	console.log('Type something (Ctrl+D to send EOF):')
-	const line = readline()
+	const line = input('Type something (Ctrl+D to send EOF):')
 
 	if (line === null) {
 		console.log('EOF detected. stdin closed.')
