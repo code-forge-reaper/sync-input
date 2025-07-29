@@ -1,4 +1,5 @@
 import fs from 'fs'
+
 export function input(prompt?: string): string | null {
 	if (prompt) {
 		//process.stdout.write(prompt)
