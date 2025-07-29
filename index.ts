@@ -22,15 +22,3 @@ export function input(prompt?: string): string | null {
 
 	return str
 }
-
-if(import.meta.main){
-	// test
-	const line = input('Type something (Ctrl+D to send EOF):')
-
-	if (line === null) {
-		console.log('EOF detected. stdin closed.')
-	} else {
-		console.log('You typed:', line)
-	}
-
-}
