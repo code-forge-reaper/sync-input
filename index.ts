@@ -2,8 +2,8 @@ import fs from 'fs'
 
 export function input(prompt?: string): string | null {
 	if (prompt) {
-		//process.stdout.write(prompt)
-		console.log(prompt)
+		process.stdout.write(prompt) // turns out python's input doesn't add a new line unless you do, welp
+		//console.log(prompt)
 	}
 	const buf = Buffer.alloc(1)
 	let str = ''
